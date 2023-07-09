@@ -5,14 +5,15 @@ import sys
 
 #mouse fora da tela da erro
 print('Clique "Esc" para cancelar, "shift+1" para iniciar, e "shift+2" para mudar de tecla.')
-key = input('Digite uma tecla caso queira repetila do contrario sera o botão esquerdo do mouse: ')
+key = input('Digite as teclas que deseja repetir do contráio será o botão esquerdo do mouse: ')
 
 def clicker():
     while True:
         if key == '':
             pyautogui.click()
         else:
-            pyautogui.press(key)
+            for c in range(len(key)):
+                pyautogui.press(key[c])
         if keyboard.is_pressed('esc'):
             break
 def change_key():
