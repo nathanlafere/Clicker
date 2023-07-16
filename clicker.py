@@ -2,8 +2,6 @@ import pyautogui
 import keyboard
 import sys
 
-
-#mouse fora da tela da erro
 print('Clique "Esc" para cancelar, "shift+1" para iniciar, e "shift+2" para mudar de tecla.')
 key = input('Digite as teclas que deseja repetir do contráio será o botão esquerdo do mouse: ')
 
